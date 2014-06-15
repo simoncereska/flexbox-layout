@@ -1,0 +1,83 @@
+@import '_mixins';
+
+// -------------------------------------------------------------------
+// Main
+// -------------------------------------------------------------------
+
+%border-box { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+%height-100 { height: 100%; min-height: 100%; }
+
+*           { @extend %border-box; }
+*:after     { @extend %border-box; }
+*:before    { @extend %border-box; }
+
+html        { @extend %height-100;  }
+body        { @extend %height-100; margin: 0;
+    @include breakpoint(small) {
+        @include flexbox();
+    }
+}
+
+.page-wrap  {
+    @include breakpoint(small) {
+        @include flexbox(); @include flex-dir(column); @include flex(1, 1, auto);
+    }
+}
+.page-head  { @include flex(0, 0, auto); padding: 0 5px; }
+.page-body  { @include flex-dir(row); @include flex(1, 1, auto);
+    @include breakpoint(small) {
+        @include flexbox();
+    }
+}
+
+.nav        { @include flex(0, 0, auto);
+    @include breakpoint(small) {
+        @include flex(0, 0, 180px);
+    }
+    @include breakpoint(x-large) {
+        @include flex(0, 0, 250px);
+    }
+}
+
+.main       { @include flex-dir(column); @include flex(1, 1, 100%); padding: 0 5px 10px;
+    @include breakpoint(small) {
+        @include flexbox();
+    }
+    @include breakpoint(medium) {
+        @include flex-dir(row);
+    }
+}
+.content    { @include flex-dir(column); @include flex(1, 1, 70%); padding: 0 5px 10px;
+    @include breakpoint(small) {
+        @include flexbox();
+    }
+    @include breakpoint(medium) {
+        @include flex(1, 1, 50%); padding: 0 5px;
+    }
+}
+.details    { @include flex-dir(column); @include flex(1, 1, 30%); padding: 0 5px;
+    @include breakpoint(small) {
+        @include flexbox();
+    }
+    @include breakpoint(x-large) {
+        @include flex(1, 1, 350px);
+    }
+}
+
+.search     { margin-bottom: 10px; }
+.list       { @include flex-dir(column); @include flex(1, 1, 100px);
+    @include breakpoint(small) {
+        @include flexbox();
+    }
+}
+
+.panel              { margin-bottom: 0; }
+.panel-flex         { @include flex-dir(column); @include flex(1, 1, 100%); margin-bottom: 0;
+    @include breakpoint(small) {
+        @include flexbox();
+    }
+    .panel-heading      { @include flex(0, 0, auto); }
+    .panel-body         { @include flex(1, 1, 100%); overflow: auto; }
+    .panel-footer       { @include flex(0, 0, auto); }
+}
+

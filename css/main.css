@@ -1,0 +1,325 @@
+/* line 7, ../sass/main.scss */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 8, ../sass/main.scss */
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+
+/* line 15, ../sass/main.scss */
+body {
+  margin: 0;
+}
+@media (min-width: 768px) {
+  /* line 15, ../sass/main.scss */
+  body {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 21, ../sass/main.scss */
+  .page-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -moz-box-flex: 1;
+    -moz-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+  }
+}
+
+/* line 26, ../sass/main.scss */
+.page-head {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  padding: 0 5px;
+}
+
+/* line 27, ../sass/main.scss */
+.page-body {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -moz-box-flex: 1;
+  -moz-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+@media (min-width: 768px) {
+  /* line 27, ../sass/main.scss */
+  .page-body {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+/* line 33, ../sass/main.scss */
+.nav {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+@media (min-width: 768px) {
+  /* line 33, ../sass/main.scss */
+  .nav {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 180px;
+    -moz-box-flex: 0;
+    -moz-flex: 0 0 180px;
+    -ms-flex: 0 0 180px;
+    flex: 0 0 180px;
+  }
+}
+@media (min-width: 1440px) {
+  /* line 33, ../sass/main.scss */
+  .nav {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 250px;
+    -moz-box-flex: 0;
+    -moz-flex: 0 0 250px;
+    -ms-flex: 0 0 250px;
+    flex: 0 0 250px;
+  }
+}
+
+/* line 42, ../sass/main.scss */
+.main {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+  -moz-box-flex: 1;
+  -moz-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+  padding: 0 5px 10px;
+}
+@media (min-width: 768px) {
+  /* line 42, ../sass/main.scss */
+  .main {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media (min-width: 980px) {
+  /* line 42, ../sass/main.scss */
+  .main {
+    -webkit-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+}
+
+/* line 50, ../sass/main.scss */
+.content {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 70%;
+  -moz-box-flex: 1;
+  -moz-flex: 1 1 70%;
+  -ms-flex: 1 1 70%;
+  flex: 1 1 70%;
+  padding: 0 5px 10px;
+}
+@media (min-width: 768px) {
+  /* line 50, ../sass/main.scss */
+  .content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media (min-width: 980px) {
+  /* line 50, ../sass/main.scss */
+  .content {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 50%;
+    -moz-box-flex: 1;
+    -moz-flex: 1 1 50%;
+    -ms-flex: 1 1 50%;
+    flex: 1 1 50%;
+    padding: 0 5px;
+  }
+}
+
+/* line 58, ../sass/main.scss */
+.details {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 30%;
+  -moz-box-flex: 1;
+  -moz-flex: 1 1 30%;
+  -ms-flex: 1 1 30%;
+  flex: 1 1 30%;
+  padding: 0 5px;
+}
+@media (min-width: 768px) {
+  /* line 58, ../sass/main.scss */
+  .details {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media (min-width: 1440px) {
+  /* line 58, ../sass/main.scss */
+  .details {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 350px;
+    -moz-box-flex: 1;
+    -moz-flex: 1 1 350px;
+    -ms-flex: 1 1 350px;
+    flex: 1 1 350px;
+  }
+}
+
+/* line 67, ../sass/main.scss */
+.search {
+  margin-bottom: 10px;
+}
+
+/* line 68, ../sass/main.scss */
+.list {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100px;
+  -moz-box-flex: 1;
+  -moz-flex: 1 1 100px;
+  -ms-flex: 1 1 100px;
+  flex: 1 1 100px;
+}
+@media (min-width: 768px) {
+  /* line 68, ../sass/main.scss */
+  .list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+/* line 74, ../sass/main.scss */
+.panel {
+  margin-bottom: 0;
+}
+
+/* line 75, ../sass/main.scss */
+.panel-flex {
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+  -moz-box-flex: 1;
+  -moz-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  /* line 75, ../sass/main.scss */
+  .panel-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+/* line 79, ../sass/main.scss */
+.panel-flex .panel-heading {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+/* line 80, ../sass/main.scss */
+.panel-flex .panel-body {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 100%;
+  -moz-box-flex: 1;
+  -moz-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+  overflow: auto;
+}
+/* line 81, ../sass/main.scss */
+.panel-flex .panel-footer {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -moz-box-flex: 0;
+  -moz-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
